@@ -2,12 +2,41 @@ body {
   margin: 0;
 }
 
+.header {
+  height: 80px;
+  }
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.links {
+  padding-right: 40px;
+}
+
+.main {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.batcat {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
 /* Typography */
 
 h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.875em;
   color: #323232;
+  margin: 0px;
 }
 
 h2 {
@@ -37,19 +66,22 @@ a {
   color: #f26522;
 }
 
-nav-p {
+.nav-p {
   font-family: "PT Sans", sans-serif;
   font-size: .9em;
   color: #323232;
+  display: inline;
 }
 
-nav-h1 {
+.nav-h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.5em;
   color: #323232;
+  display: inline;
+  padding-left: 40px;
 }
 
-footer-h1 {
+.footer-h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.25em;
   color: #323232;
