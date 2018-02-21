@@ -17,6 +17,8 @@ nav {
   padding-right: 40px;
 }
 
+/* Main Section */
+
 .main {
   padding-top: 50px;
   display: flex;
@@ -24,10 +26,77 @@ nav {
   align-items: center;
 }
 
+.main-text {
+  width: 720px;
+}
+
 .batcat {
   display: flex;
   justify-content: center;
   overflow: hidden;
+}
+
+/* About Sections */
+
+.about-boxes {
+  background-color: #eeeeee;
+  height: auto;
+  width: 230px;
+  display: inline;
+  margin: 50px 30px;
+  padding: 0px 30px 30px 30px;
+}
+
+.about-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Images */
+
+.cat-pictures {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Contact */
+
+.contact {
+  background-color: #eeeeee;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.contact-boxes {
+  background-color: #ffffff;
+  height: auto;
+  width: 230px;
+  display: inline;
+  margin: 50px 30px;
+  padding: 0px 30px 30px 30px;
+}
+
+.right {
+  float: right;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #00897f;
+  height: 100px;
+  width: 100%;
 }
 
 /* Typography */
@@ -37,6 +106,7 @@ h1 {
   font-size: 1.875em;
   color: #323232;
   margin: 0px;
+  text-align: center;
 }
 
 h2 {
@@ -44,6 +114,8 @@ h2 {
   font-size: 1.5em;
   color: #00897f;
   text-transform: uppercase;
+  margin: 0px;
+  padding-top: 25px;
 }
 
 h3 {
@@ -51,6 +123,8 @@ h3 {
   font-size: 1em;
   line-height: 2em;
   color: #323232;
+  margin: 0px;
+  padding-top: 20px;
 }
 
 p {
@@ -58,6 +132,8 @@ p {
   font-size: .875em;
   line-height: 1.75em;
   color: #323232;
+  margin: 0px;
+  text-align: left;
 }
 
 a {
@@ -84,7 +160,8 @@ a {
 .footer-h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.25em;
-  color: #323232;
+  color: #ffffff;
+  padding-top: 40px;
 }
 
 
