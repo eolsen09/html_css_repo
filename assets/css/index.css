@@ -48,7 +48,6 @@ nav {
 }
 
 .about-center {
-  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -77,13 +76,27 @@ nav {
 .contact-boxes {
   background-color: #ffffff;
   height: auto;
-  width: 230px;
+  width: 240px;
   display: inline;
   margin: 50px 30px;
   padding: 0px 30px 30px 30px;
 }
 
-.right {
+.contact-text {
+  text-align: left;
+}
+
+.address-box {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.address-box h3 {
+  padding: 0px;
+  text-align: left;
+}
+
+.right{
   float: right;
 }
 
@@ -117,6 +130,7 @@ h2 {
   text-transform: uppercase;
   margin: 0px;
   padding-top: 25px;
+  text-align: center;
 }
 
 h3 {
