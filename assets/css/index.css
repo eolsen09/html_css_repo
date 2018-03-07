@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 330px;
 }
 
 .header {
@@ -28,6 +29,7 @@ nav {
 
 .main-text {
   width: 720px;
+  max-width: 75%;
 }
 
 .batcat {
@@ -41,7 +43,7 @@ nav {
 .about-boxes {
   background-color: #eeeeee;
   height: auto;
-  width: 230px;
+  max-width: 230px;
   display: inline;
   margin: 50px 30px;
   padding: 0px 30px 30px 30px;
@@ -179,11 +181,49 @@ a {
   padding-top: 40px;
 }
 
+/* On devices smaller than 585px */
+@media screen and (max-width: 585px) {
+  .nav-h1 {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 32px;
+  }
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
-}
+  .nav-p {
+    display: none;
+  }
 
-/* On devices wider than 940px */
-@media(min-width: 940px) {
+  .about-center {
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+
+  .about-boxes {
+    margin: 0px;
+  }
+
+  .contact-boxes {
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 0px;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+ .address-box h3 {
+   text-align: center;
+ }
+
+
+/* On devices wider than 875px */
+@media screen and (max-width: 875px) {
+
 }
