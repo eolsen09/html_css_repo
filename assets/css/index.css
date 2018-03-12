@@ -61,7 +61,7 @@ nav {
   padding-bottom: 50px;
 }
 
-.img-circle {
+.img-cat1, .img-cat2, .img-cat3 {
   border-radius: 50%;
   padding-left: 20px;
   padding-right: 20px;
@@ -75,10 +75,15 @@ nav {
   overflow: hidden;
 }
 
+.contact-center {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-boxes {
   background-color: #ffffff;
   height: auto;
-  width: 240px;
+  max-width: 240px;
   display: inline;
   margin: 50px 30px;
   padding: 0px 30px 30px 30px;
@@ -198,29 +203,49 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: #eeeeee;
+
   }
 
   .about-boxes {
     margin: 0px;
+    max-width: 100%;
+  }
+
+  .main-text {
+    max-width: 100%;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .main {
+    padding: 30px;
   }
 
   .contact-boxes {
-    width: 100%;
-    background-color: #eeeeee;
     margin: 0px;
+    max-width: 100%;
+    background-color: #eeeeee;
   }
 
-  .contact-text {
-    text-align: center;
+  .contact-center {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .right {
-    text-align: center;
+  .img-cat1, .img-cat2 {
+    display: none;
   }
 
- .address-box h3 {
-   text-align: center;
- }
+.cat-pictures {
+  padding-top: 50px;
+}
+
+p {
+  font-size: 18px;
+}
+
+}
+
 
 
 /* On devices wider than 875px */
