@@ -30,12 +30,20 @@ nav {
 .main-text {
   width: 720px;
   max-width: 75%;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
 .batcat {
   display: flex;
   justify-content: center;
   overflow: hidden;
+}
+
+.batcat-mobile {
+  display: none;
 }
 
 /* About Sections */
@@ -199,6 +207,16 @@ a {
     display: none;
   }
 
+  .batcat {
+    display: none;
+  }
+
+  .batcat-mobile {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
   .about-center {
     flex-direction: column;
     align-items: center;
@@ -213,8 +231,9 @@ a {
 
   .main-text {
     max-width: 100%;
-    padding-bottom: 10px;
+    padding: 10px 0px;
     font-size: 18px;
+    font-weight: normal;
   }
 
   .main {
@@ -244,11 +263,40 @@ p {
   font-size: 18px;
 }
 
+
 }
 
+/* On devices between 586 and 875*/
+@media screen and (min-width: 586px) and (max-width: 875px) {
 
+  .batcat {
+    display: none;
+  }
+
+  .batcat-mobile {
+    display: none;
+  }
+
+  .img-cat3 {
+    display: none;
+  }
+}
 
 /* On devices wider than 875px */
-@media screen and (max-width: 875px) {
+@media screen and (min-width: 875px) {
 
+  .batcat {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .batcat-mobile {
+    display: none;
+  }
+
+  .batcat-mobile-tablet {
+    display: none;
+
+  }
 }
