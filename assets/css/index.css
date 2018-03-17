@@ -118,6 +118,7 @@ nav {
   float: right;
 }
 
+/* probably don't need flex for images, width 100% will do! */
 .map {
   display: flex;
   justify-content: center;
