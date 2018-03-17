@@ -69,6 +69,7 @@ nav {
   padding-bottom: 50px;
 }
 
+/* could we make these one class? */
 .img-cat1, .img-cat2, .img-cat3 {
   border-radius: 50%;
   padding-left: 20px;
@@ -251,6 +252,7 @@ a {
     align-items: center;
   }
 
+  /* then if we need them individually use ids */
   .img-cat1, .img-cat2 {
     display: none;
   }
@@ -277,6 +279,7 @@ a {
     display: none;
   }
 
+  /* then if we need them individually use ids */
   .img-cat3 {
     display: none;
   }
