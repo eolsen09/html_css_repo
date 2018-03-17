@@ -5,7 +5,7 @@ body {
 
 .header {
   height: 80px;
-  }
+}
 
 nav {
   display: inline-flex;
@@ -111,7 +111,7 @@ nav {
   text-align: left;
 }
 
-.right{
+.right {
   float: right;
 }
 
@@ -255,13 +255,13 @@ a {
     display: none;
   }
 
-.cat-pictures {
-  padding-top: 50px;
-}
+  .cat-pictures {
+    padding-top: 50px;
+  }
 
-p {
-  font-size: 18px;
-}
+  p {
+    font-size: 18px;
+  }
 
 
 }
@@ -297,6 +297,5 @@ p {
 
   .batcat-mobile-tablet {
     display: none;
-
   }
 }
