@@ -54,7 +54,7 @@ nav {
   background-color: #eeeeee;
   height: auto;
   max-width: 230px;
-  display: inline;
+  display: inline; /* don't need bc the boxes are actually inline by parent below */
   margin: 50px 30px;
   padding: 0px 30px 30px 30px;
 }
