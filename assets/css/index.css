@@ -198,6 +198,8 @@ a {
   padding-top: 40px;
 }
 
+/* TODO: reverse order of media queries (from biggest on top to smallest on bottom) */
+
 /* On devices smaller than 585px */
 @media screen and (max-width: 585px) {
   .nav-h1 {
