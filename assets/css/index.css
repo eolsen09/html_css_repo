@@ -5,13 +5,15 @@ body {
 
 .header {
   height: 80px;
-  }
+}
 
+/* display: flex vs display: inline-flex */
 nav {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  height: 100%; // so nav takes full height of parent container header
 }
 
 .links {
@@ -52,7 +54,7 @@ nav {
   background-color: #eeeeee;
   height: auto;
   max-width: 230px;
-  display: inline;
+  display: inline; /* don't need bc the boxes are actually inline by parent below */
   margin: 50px 30px;
   padding: 0px 30px 30px 30px;
 }
@@ -69,6 +71,7 @@ nav {
   padding-bottom: 50px;
 }
 
+/* could we make these one class? */
 .img-cat1, .img-cat2, .img-cat3 {
   border-radius: 50%;
   padding-left: 20px;
@@ -111,10 +114,11 @@ nav {
   text-align: left;
 }
 
-.right{
+.right {
   float: right;
 }
 
+/* probably don't need flex for images, width 100% will do! */
 .map {
   display: flex;
   justify-content: center;
@@ -194,6 +198,8 @@ a {
   padding-top: 40px;
 }
 
+/* TODO: reverse order of media queries (from biggest on top to smallest on bottom) */
+
 /* On devices smaller than 585px */
 @media screen and (max-width: 585px) {
   .nav-h1 {
@@ -255,17 +261,18 @@ a {
     align-items: center;
   }
 
+  /* then if we need them individually use ids */
   .img-cat1, .img-cat2 {
     display: none;
   }
 
-.cat-pictures {
-  padding-top: 50px;
-}
+  .cat-pictures {
+    padding-top: 50px;
+  }
 
-p {
-  font-size: 18px;
-}
+  p {
+    font-size: 18px;
+  }
 
 
 }
@@ -286,6 +293,7 @@ p {
     display: none;
   }
 
+  /* then if we need them individually use ids */
   .img-cat3 {
     display: none;
   }
@@ -306,6 +314,5 @@ p {
 
   .batcat-tablet {
     display: none;
-
   }
 }
