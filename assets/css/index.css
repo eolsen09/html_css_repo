@@ -223,6 +223,10 @@ a {
     overflow: hidden;
   }
 
+  .batcat-tablet {
+    display: none;
+  }
+
   .about-center {
     flex-direction: column;
     align-items: center;
@@ -280,7 +284,11 @@ a {
     display: none;
   }
 
-  /* oh no missing bat cat here... see page */
+  .batcat-tablet {
+    display: flex;
+    justify-content: center;
+  }
+
   .batcat-mobile {
     display: none;
   }
@@ -304,7 +312,7 @@ a {
     display: none;
   }
 
-  .batcat-mobile-tablet {
+  .batcat-tablet {
     display: none;
   }
 }
